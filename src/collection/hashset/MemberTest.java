@@ -1,0 +1,22 @@
+package collection.hashset;
+
+import collection.Member;
+
+public class MemberTest {
+	public static void main(String[] args) {
+		MemberHashSet memberHashSet = new MemberHashSet( );
+		
+		Member memberLee = new Member(1001, "이지원");
+		Member memberSon = new Member(1001, "손민국");
+		Member memberPark = new Member(1001, "박서휜");
+		
+		memberHashSet.addMember(memberLee);
+		memberHashSet.addMember(memberSon);
+		memberHashSet.addMember(memberPark);
+		
+		Member memberHong = new Member(1003, "홍길동");
+		memberHashSet.addMember(memberHong);
+		memberHashSet.showAllMember();
+	}
+
+}
